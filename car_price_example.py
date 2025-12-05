@@ -129,9 +129,9 @@ def split_data(X, y):
     y_train = y.iloc[:15]
     y_test = y.iloc[15:]
     
-    print(f"\n=== Data Split (Matching Unplugged Activity) ===")
-    print(f"Training set: {len(X_train)} samples (first 15 cars)")
-    print(f"Testing set: {len(X_test)} samples (last 3 cars - your holdout set!)")
+    print(f"\n=== Data Split ===")
+    print(f"Training set: {len(X_train)} samples ")
+    print(f"Testing set: {len(X_test)} samples")
     print(f"\nNOTE: We're NOT scaling features here so coefficients are easy to interpret!")
     
     return X_train, X_test, y_train, y_test
