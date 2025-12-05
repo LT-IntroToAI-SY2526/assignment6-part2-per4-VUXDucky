@@ -95,7 +95,7 @@ def visualize_features(data):
     # TODO: Use plt.tight_layout() to make plots fit nicely
     plt.tight_layout()
     # TODO: Save the figure as 'feature_plots.png' with dpi=300
-    plt.savefig('car_features.png', dpi =300, bbox_inches ='tight')
+    plt.savefig('feature_plots.png', dpi =300, bbox_inches ='tight')
     # TODO: Show the plot
     print("\n✓ Feature plots saved as 'house_features.png'")
     plt.show()
