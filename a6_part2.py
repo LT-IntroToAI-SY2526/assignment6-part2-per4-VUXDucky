@@ -95,7 +95,7 @@ def visualize_features(data):
     # TODO: Use plt.tight_layout() to make plots fit nicely
     plt.tight_layout()
     # TODO: Save the figure as 'feature_plots.png' with dpi=300
-    plt.savefig('feature_plots.png', dpi =300, bbox_inches ='tight')
+    plt.savefig('house_features.png', dpi =300, bbox_inches ='tight')
     # TODO: Show the plot
     print("\n✓ Feature plots saved as 'house_features.png'")
     plt.show()
@@ -141,7 +141,7 @@ def split_data(X, y):
         X_train, X_test, y_train, y_test
     """
     # TODO: Split into train (80%) and test (20%) with random_state=42
-    X_train, X_test, y_train, y_test = train_test_split(X,y, tst_size = .2, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = .2, random_state=42)
     # TODO: Print how many samples are in training and testing sets
     print(f"\n=== Data Split ===")
     print(f"Training set: {len(X_train)} samples ")
@@ -303,7 +303,7 @@ if __name__ == "__main__":
     X, y = prepare_features(data)
     # Step 4: Split data
     # TODO: Call split_data() and store X_train, X_test, y_train, y_test
-    X_train, X_test, y_train, y_test = split_data(X,y)
+    X_train, X_test, y_train, y_test = split_data(X, y)
     # Step 5: Train model
     # TODO: Call train_model() with training data and feature names (X.columns)
     model = train_model(X_train, y_train, X.columns)

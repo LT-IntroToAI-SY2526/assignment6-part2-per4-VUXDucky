@@ -26,7 +26,7 @@ Choose TWO features from your model and explain what their coefficients mean in 
 the model_intercept_:.2f is basically the average int price of the house before the rest of the factors like sqft or bedrooms affect its price. That int price is $85,706
 
 **Feature 2:**
-
+Each year the house ages it gets -950 dollars deducted from the house pricing.
 
 ---
 
